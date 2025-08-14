@@ -3,7 +3,7 @@
 	"id": "firsttestmod",
 	"version": "${version}",
 	"name": "TestMod1",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod helps me to learn Java mods development. It doesn't add anything interesting into the game",
 	"authors": [
 		"Me!"
 	],
