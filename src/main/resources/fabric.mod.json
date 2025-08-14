@@ -18,6 +18,9 @@
 		"main": [
 			"ru.untriedduck61.mods.firsttestmod.FirstTestMod"
 		],
+        "client": [
+            "ru.untriedduck61.mods.firsttestmod.FirstTestModClient"
+        ],
 		"fabric-datagen": [
 			"ru.untriedduck61.mods.firsttestmod.FirstTestModDataGenerator"
 		]
