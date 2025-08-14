@@ -8,10 +8,10 @@
 		"Me!"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://untried-duck61.github.io/",
+		"sources": "https://github.com/untried-duck61/TestMod1-fabric"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/firsttestmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
