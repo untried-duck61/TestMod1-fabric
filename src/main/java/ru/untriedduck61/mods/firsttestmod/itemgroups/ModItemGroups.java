@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import ru.untriedduck61.mods.firsttestmod.FirstTestMod;
+import ru.untriedduck61.mods.firsttestmod.block.ModBlocks;
 import ru.untriedduck61.mods.firsttestmod.items.ModItems;
 
 import static ru.untriedduck61.mods.firsttestmod.FirstTestMod.MOD_ID;
@@ -24,7 +25,10 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemGroup.firsttestmod_main_page"))
                     .icon(() -> new ItemStack(ModItems.TEST_ITEM))
                     .entries((displayContext, entries) ->
-                            entries.add(ModItems.TEST_ITEM))
+                    {
+                        entries.add(ModItems.TEST_ITEM);
+                        entries.add(ModBlocks.TEST_BLOCK);
+                    })
                     .build()
     );
 
