@@ -1,7 +1,6 @@
 package ru.untriedduck61.mods.firsttestmod.itemgroups;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -18,26 +17,16 @@ public class ModItemGroups {
      * Mod item groups
      ****************************************/
 
-    public static final ItemGroup MAIN_PAGE = registerItemGroup("main_page", "itemgroup.main_page", ModItems.TEST_ITEM);
-
-    /*****************************************
-     * Mod items factory
-     ****************************************/
-
-    public static ItemGroup registerItemGroup(String itemGroupId, String displayNameKey, ItemConvertible icon) {
-        return Registry.register(
-                Registries.ITEM_GROUP,
-                new Identifier(MOD_ID, itemGroupId),
-                FabricItemGroup.builder()
-                        .displayName(Text.translatable(displayNameKey))
-                        .icon(() ->
-                                new ItemStack(icon))
-                        .entries(((displayContext, entries) -> {
-                            entries.add(ModItems.TEST_ITEM);
-                        }))
-                        .build()
-        );
-    }
+    public static final ItemGroup MAIN_PAGE = Registry.register(
+            Registries.ITEM_GROUP,
+            new Identifier(MOD_ID, "main_page"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemGroup.firsttestmod_main_page"))
+                    .icon(() -> new ItemStack(ModItems.TEST_ITEM))
+                    .entries((displayContext, entries) ->
+                            entries.add(ModItems.TEST_ITEM))
+                    .build()
+    );
 
     /*****************************************
      * Register item groups method
