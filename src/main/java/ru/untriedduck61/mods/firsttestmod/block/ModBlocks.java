@@ -20,7 +20,7 @@ public class ModBlocks {
      * Mod items
      ****************************************/
 
-    public static final Block TEST_BLOCK = registerBlock("test_block", new Block(FabricBlockSettings.create().mapColor(MapColor.ORANGE).strength(1.0F, 4.0F).instrument(Instrument.BASEDRUM)));
+    public static final Block TEST_BLOCK = registerBlock("test_block", new Block(FabricBlockSettings.create().mapColor(MapColor.CYAN).strength(1.0F, 4.0F).instrument(Instrument.BASEDRUM)));
 
     /*****************************************
      * Mod blocks factory
