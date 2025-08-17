@@ -1,5 +1,7 @@
 {
   "item.firsttestmod.test_item": "Тестовый предмет",
 
+  "block.firsttestmod.test_block": "Тестовый предмет",
+
   "itemGroup.firsttestmod_main_page": "Главная страница"
 }

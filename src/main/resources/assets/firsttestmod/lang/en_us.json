@@ -1,5 +1,7 @@
 {
   "item.firsttestmod.test_item": "Test Item",
 
+  "block.firsttestmod.test_block": "Test Block",
+
   "itemGroup.firsttestmod_main_page": "Main Page"
 }
